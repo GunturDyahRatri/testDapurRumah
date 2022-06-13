@@ -116,15 +116,37 @@ class _ProductPageUXState extends State<ProductPageUX> {
                                         return ChartPage2();
                                       }));
                                     },
-                                    child: Container(
-                                      margin: EdgeInsets.symmetric(
-                                          horizontal: 100, vertical: 100),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(10),
-                                        color: Colors.white,
-                                      ),
-                                      child:
-                                          Icon(Icons.bookmark_border, size: 15),
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          margin: EdgeInsets.symmetric(
+                                              horizontal: 60, vertical: 80),
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            color: Colors.white,
+                                          ),
+                                          child: Icon(Icons.bookmark_border,
+                                              size: 15),
+                                        ),
+                                        SizedBox(height: 25),
+                                        Text(
+                                          "Kursi 1",
+                                          style: TextStyle(
+                                            color: Colors.blue[800],
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "10.000",
+                                          style: TextStyle(
+                                            color: Colors.blue[800],
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),
